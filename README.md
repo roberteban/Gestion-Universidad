@@ -34,11 +34,9 @@
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/tuusuario/Gestion-Universidad.git
-
 2. Instala las dependencias:
    ```bash
    npm install
-
 3. Configura la base de datos en MySQL:
    Crea una base de datos llamada `universidad` y las siguientes tablas:
    ```bash
@@ -62,7 +60,6 @@
     FOREIGN KEY (legajo_estudiante) REFERENCES estudiantes(legajo),
     FOREIGN KEY (codigo_curso) REFERENCES cursos(codigo)
    );
-
 4. Configura la conexión a la base de datos en el archivo conexion.js:
    ```bash
    const conexion = mysql.createConnection({
@@ -71,9 +68,7 @@
     password: '',
     database: 'universidad'
    });
-
-6. Inicia el servidor:
+5. Inicia el servidor:
    ```bash
    npm start
-
-7. Accede a la API a través de `http://localhost:3000`.
+6. Accede a la API a través de `http://localhost:3000`.
