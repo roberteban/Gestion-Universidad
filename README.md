@@ -41,20 +41,19 @@
 
 3. Configura la base de datos en MySQL:
    Crea una base de datos llamada `universidad` y las siguientes tablas:
-CREATE TABLE estudiantes (
+   ```bash
+   CREATE TABLE estudiantes (
     legajo INT PRIMARY KEY,
     nombre VARCHAR(100),
     email VARCHAR(100)
-);
-
-CREATE TABLE cursos (
+   );
+   CREATE TABLE cursos (
     codigo INT PRIMARY KEY,
     nombre VARCHAR(100),
     docente VARCHAR(100),
     descripcion TEXT
-);
-
-CREATE TABLE notas (
+   );
+   CREATE TABLE notas (
     id INT PRIMARY KEY AUTO_INCREMENT,
     legajo_estudiante INT,
     codigo_curso INT,
@@ -62,7 +61,7 @@ CREATE TABLE notas (
     fecha DATE,
     FOREIGN KEY (legajo_estudiante) REFERENCES estudiantes(legajo),
     FOREIGN KEY (codigo_curso) REFERENCES cursos(codigo)
-);
+   );
 
 4. Configura la conexión a la base de datos en el archivo conexion.js:
 const conexion = mysql.createConnection({
