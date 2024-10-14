@@ -64,15 +64,16 @@
    );
 
 4. Configura la conexión a la base de datos en el archivo conexion.js:
-const conexion = mysql.createConnection({
+   ```bash
+   const conexion = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'universidad'
-});
+   });
 
-5. Inicia el servidor:
+6. Inicia el servidor:
    ```bash
    npm start
 
-6. Accede a la API a través de `http://localhost:3000`.
+7. Accede a la API a través de `http://localhost:3000`.
