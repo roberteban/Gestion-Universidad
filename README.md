@@ -33,7 +33,7 @@
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/Gestion-Universidad.git
+   git clone https://github.com/roberteban/Gestion-Universidad.git
 2. Instala las dependencias:
    ```bash
    npm install
